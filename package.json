@@ -1,0 +1,23 @@
+{
+  "name": "hotrestaurant",
+  "version": "1.0.0",
+  "description": "hot UK Rest",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pmscad/HotRestaurant.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pmscad/HotRestaurant/issues"
+  },
+  "homepage": "https://github.com/pmscad/HotRestaurant#readme"
+}
