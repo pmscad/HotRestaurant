@@ -18,7 +18,7 @@ const reservations = [
   {
     customerName: "",
     phoneNumber: "",
-    customerEmail: "Jedi Master",
+    customerEmail: "",
     customerID: 900
   }
 ];
@@ -27,7 +27,7 @@ const waitingList = [
   {
     customerName: "",
     phoneNumber: "",
-    customerEmail: "Jedi Master",
+    customerEmail: "",
     customerID: 900
   }
 ];
@@ -69,10 +69,11 @@ app.post("/api/reserve", function(req, res) {
   // req.body hosts is equal to the JSON post sent from the user
   // This works because of our body parsing middleware
   var newReservation = req.body;
+  console.log(req.body);
 
   // Using a RegEx Pattern to remove spaces from newCharacter
   // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
-  newReservation.customerName = newReservation.name
+  newReservation.customerName = newReservation.customerName
     .replace(/\s+/g, "")
     .toLowerCase();
 
