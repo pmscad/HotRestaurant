@@ -9,4 +9,14 @@ submit.addEventListener("click", e => {
     customerID: document.querySelector("#unique-id").value.trim()
   };
   console.log(newReservation);
+
+  fetch("/api/reserve", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify(newReservation)
+  }).then(function(data) {
+    console.log(data);
+  });
 });
